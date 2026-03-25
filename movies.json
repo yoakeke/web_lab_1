@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Интерстеллар",
+    "year": 2014,
+    "watched": true,
+    "id": 1
+  },
+  {
+    "title": "Матрица",
+    "year": 1999,
+    "watched": false,
+    "id": 2
+  }
+]
