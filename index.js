@@ -18,7 +18,7 @@ const writeData = (data) => fs.writeFileSync(dataFilePath, JSON.stringify(data, 
 // Валидация фильма
 const validateMovie = (movie) => {
   if (!movie.title || typeof movie.title !== 'string' || movie.title.length > 100) return false;
-  if (!movie.year || typeof movie.year !== 'number' || movie.year < 1888 || movie.year > new Date().getFullYear()) return false; // 1888 — первый фильм
+  if (!movie.year || typeof movie.year !== 'number' || movie.year < 1888 || movie.year > new Date().getFullYear()) return false;
   if (movie.watched !== undefined && typeof movie.watched !== 'boolean') return false;
   return true;
 };
